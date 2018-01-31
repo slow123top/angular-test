@@ -1,0 +1,17 @@
+
+<div class="row justify-content-center">
+  <div class="col-6">
+    <form>
+      <h2>Add a Link</h2>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Title:</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" #newTitle>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Link:</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" #newLink>
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="addArticle(newTitle,newLink)">Submit</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="row justify-content-center">
+  <div class="col-6">
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <div class="article-value">
+          {{article.votes}}
+        </div>
+        <div class="article-label">
+          points
+        </div>
+      </div>
+      <div class="col-8">
+        <a href="{{article.link}}" class="article-header">
+          {{article.title}}
+        </a>
+        <div class="meta"></div>
+        <ul>
+          <li class="article-click">
+            <a href (click)="voteUp()">
+              upvote
+            </a>
+          </li>
+          <li class="article-click" (click)="voteDown()">
+            <a href>
+              downvote
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
